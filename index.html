@@ -1,126 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Shopee Limited-Time Deals</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Montserrat:wght@700&display=swap');
-
-  body {
-    margin: 0; padding: 0;
-    background: #f7f8fa;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .container {
-    background: #fff;
-    max-width: 460px;
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-    padding: 40px 30px;
-    text-align: center;
-  }
-  .logo {
-    margin-bottom: 30px;
-    width: 140px;
-    height: 45px;
-    background: url('logo.png') no-repeat center;
-    background-size: contain;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .banner {
-    width: 100%;
-    height: 200px;
-    background: url('banner.jpg') no-repeat center center;
-    background-size: cover;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(255,87,34,0.3);
-    margin-bottom: 35px;
-  }
-  h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    color: #ff5722;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: 1.1px;
-    text-shadow: 1px 1px 3px rgba(255,87,34,0.3);
-  }
-  p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #555;
-    font-weight: 600;
-  }
-  .countdown {
-    color: #ff5722;
-    font-weight: 700;
-    font-size: 22px;
-    margin-bottom: 30px;
-    letter-spacing: 1.5px;
-  }
-  .button {
-    display: inline-block;
-    background: linear-gradient(135deg, #ff6a00, #ff5722);
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 18px 45px;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 6px 12px rgba(255,87,34,0.5);
-    transition: all 0.3s ease;
-  }
-  .button:hover {
-    background: linear-gradient(135deg, #ff7f24, #ff7848);
-    box-shadow: 0 10px 20px rgba(255,87,34,0.6);
-    transform: translateY(-3px);
-  }
-  footer {
-    margin-top: 40px;
-    font-size: 13px;
-    color: #aaa;
-    font-weight: 500;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimsum Station</title>
 </head>
 <body>
-  <div class="container">
-    <div class="logo"></div>
-    <div class="banner"></div>
-    <h1>Shopee Limited-Time Deals</h1>
-    <p>Redirecting in <span class="countdown">3</span> seconds</p>
-    <a href="https://s.shopee.com.my/9AEg8WXn7M" class="button" target="_blank" rel="noopener noreferrer">
-      Get Your Deal Now
-    </a>
-    <footer>© <span id="year"></span> Your Brand Name. All rights reserved.</footer>
-  </div>
-
-  <script>
-    // 自动跳转倒计时
-    let countdownNum = 3;
-    const countdownElem = document.querySelector('.countdown');
-    const targetUrl = "https://s.shopee.com.my/9AEg8WXn7M";
-
-    const countdownInterval = setInterval(() => {
-      countdownNum--;
-      if (countdownNum <= 0) {
-        clearInterval(countdownInterval);
-        window.location.href = targetUrl;
-      } else {
-        countdownElem.textContent = countdownNum;
-      }
-    }, 1000);
-
-    // 自动更新版权年份
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <h1>Welcome to Dimsum Station</h1>
+  <img src="banner.jpg" alt="Dimsum Station Banner" style="max-width:100%;height:auto;">
+  <p>Your content here...</p>
 </body>
 </html>
